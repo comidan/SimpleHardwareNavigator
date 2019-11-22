@@ -18,16 +18,16 @@ port (
 );
 end project_logic_net;
 ```
-In particular:
-&nbsp;&nbsp;&nbsp;● i_clk it's the clock signal
-&nbsp;&nbsp;&nbsp;● i_start it's the start of computation signal
-&nbsp;&nbsp;&nbsp;● i_rst it's the RESET signal which allow the component to reeive a START signal
-&nbsp;&nbsp;&nbsp;● i_data it's the signal coming from the RAM in a form of a vector after a RAM read request
-&nbsp;&nbsp;&nbsp;● o_address it's the vector signal for telling the RAM which address I want to read from
-&nbsp;&nbsp;&nbsp;● o_done it's the signal of the end of the computation
-&nbsp;&nbsp;&nbsp;● o_en it's the ENABLE signal for allowing communication with RAM, needed for both writes and reads
-&nbsp;&nbsp;&nbsp;● o_we it's the WRITE ENABLE signal which has to be sent to the RAM equal to 1 to be able to write. Instead for reading it must be equal to 0
-&nbsp;&nbsp;&nbsp;● o_data it's the vector signal sent to the RAM which will be written at the requested address
+In particular:  
+&nbsp;&nbsp;&nbsp;● i_clk it's the clock signal  
+&nbsp;&nbsp;&nbsp;● i_start it's the start of computation signal  
+&nbsp;&nbsp;&nbsp;● i_rst it's the RESET signal which allow the component to reeive a START signal  
+&nbsp;&nbsp;&nbsp;● i_data it's the signal coming from the RAM in a form of a vector after a RAM read request  
+&nbsp;&nbsp;&nbsp;● o_address it's the vector signal for telling the RAM which address I want to read from  
+&nbsp;&nbsp;&nbsp;● o_done it's the signal of the end of the computation  
+&nbsp;&nbsp;&nbsp;● o_en it's the ENABLE signal for allowing communication with RAM, needed for both writes and reads  
+&nbsp;&nbsp;&nbsp;● o_we it's the WRITE ENABLE signal which if equal to 1 can write, otherwise 0 to read  
+&nbsp;&nbsp;&nbsp;● o_data it's the vector signal sent to the RAM which will be written at the requested address  
 
 RAM description
 ```
